@@ -1,0 +1,178 @@
+body {
+  background-color: #d3d3d3;
+  font-family: Century Gothic;
+  font-weight: bold; 
+  width: 100%;
+}
+h1#title {
+  font-size: 300%;
+  font-family: cursive;
+  font-weight: bold;
+  width: 65%; 
+  margin-top: 15%; 
+  margin-left: 15%;
+}
+h2.heads { 
+  margin-left: 20%; 
+  margin-right: 25%; 
+  font-family: Comic sans, cursive; 
+  color: purple; 
+  font-size: 200%;
+  width: 90%;
+} 
+header#desktop-nav ul { 
+   font-family: Consolas, monospace;
+   border: thin solid #d3d3d3;
+   position: fixed;
+   top: 0%;
+   bottom: 90%;
+   background-color: purple;
+   width: 100%;
+   height: 10%; 
+   margin-top: 0%;
+   margin-left: 0%;
+}
+span.project-name { min-width: 30%; }
+button.download-cv-button {
+   margin-top: 6%;
+   margin-left: 35%;
+   margin-right: 29%;
+   margin-bottom: 10%;
+   font-family: Consolas, monospace;
+   font-size: 130%;
+   font-weight: bold;
+   width: 30%;
+   height: 9%;
+   border-radius: 18%;
+   background-color: purple;
+   color: white;
+}
+p#call-text { 
+   font-size: 130%; 
+   font-family: Comic sans, cursive; 
+   color: white;  
+   margin-left: 20%;
+}
+span#call-text { 
+   font-size: 100%; 
+   font-family: Comic sans, cursive; 
+   color: white;  
+   margin-left: 20%;
+   margin-right: 3%;
+}
+span#call-image {
+   margin-right: 3%;
+}
+span#phone-number {
+   font-size: 120%; 
+   font-family: Comic sans, cursive; 
+   color: white;  
+   margin-right: 3%;
+}
+p.cnt {
+   font-size: 110%;
+   width: 50%;
+   text-align: center;
+   font-family: Consolas, monospace;
+   font-weight: bold;
+   margin-top: 3%;
+   margin-left: 10%;
+   margin-right: 25%;
+}
+p#cnt {
+   font-size: 110%;
+   width: 90%;
+   text-align: center;
+   font-family: Consolas, monospace;
+   font-weight: bold;
+   margin-top: 3%;
+   margin-left: 10%;
+   margin-right: 25%;
+}
+p#first-text { margin-bottom: 4%; }
+h3.service-heads {
+      font-family: cursive;
+      font-weight: bold;
+      color: purple;
+      margin-left: 15%;
+      margin-right: 25%;
+}
+div.project-section {
+     border: medium outset white;
+     background-color: purple;
+     border-radius: 10px;
+     padding: 20px; 
+     width: 20%;
+     text-align: center;
+     margin-top: 15%;
+     margin-left: 20%;
+     margin-right: 25%;
+}
+span.project-name { 
+     font-family: cursive;
+     color: white;
+     font-size: 200%;
+     font-weight: bold; 
+     margin-bottom: 20px;
+}
+img.project-image {
+      width: 35%;
+      height: 35%;
+}
+span.project-description { 
+      font-family: Consolas, monospace;
+      color: white;
+      width: 30%;
+      text-align: center; 
+}
+#image {
+   width: 25%;
+   height: 45%;
+   position: absolute;
+   right: 5%;
+   top: 30%;
+}
+span.tech-span {
+   color: white;
+   border: thin solid purple;
+   background-color: purple;
+   font-weight: bold;
+   font-family: Consolas, monospace;
+   width: 0.09%;
+   padding: 8px;
+   border-radius: 9px;
+   display: block;
+   width: 30%;  
+   min-width: 20%;
+   margin-top: 4%; 
+   margin-left: 25%; 
+}
+div#table-container { display: table; }
+div#project-table-container { display: table; }
+div#about { width: 50%; }
+div.table-row, div.table-row2, div#project-table-row, div#project-table-row2 {
+   display: table-row;
+}
+div#about, div#skills, div#projects, div#services, div.project-section {
+    display: table-cell;
+}
+span#rwd { 
+   display: block; 
+   width: 15%;  
+   margin-top: 4%; 
+   margin-left: 25%; 
+}
+div#techs { margin-top: 45px; text-align: center; } 
+div#call { margin-top: 0%; }
+div#projects, div#about, div#skills, div#top, div#services, div#contact { margin-top: 12%; }
+ul li {
+  padding: 10px;
+  display: inline;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+} 
+span#svgs1, .project-image, #about-image, span#name, div#nav, span#menu-bar, p#back, #contact-span2 {
+  display: none;
+}
