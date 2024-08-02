@@ -1,0 +1,8 @@
+body {
+    margin-top: 35%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(6, 6, 71), rgb(40, 40, 221));
+    font-size: 100%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5em;
+}
