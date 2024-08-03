@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Isaac Ugochukwu">
+    <meta name="twitter:description" content="A Professional Frontend Web Developer, Skilled In Designing & Crafting Responsive and Scalable Web Applications. &#9889;">
+    <meta name="twitter:image" content="mypic.jpg">
+    <meta name="twitter:url" content="isaacugochukwu.vercel.app">
+    <meta property="og:title" content="Isaac Ugochukwu">
+    <meta property="og:description" content="A Professional Frontend Web Developer, Skilled In Designing & Crafting Responsive and Scalable Web Applications. &#9889;">
+    <meta property="og:url" content="https://isaacugochukwu.vercel.app">
+    <meta property="og:type" content="website">
+    <title>Isaac Ugochukwu - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="all.css" media="all">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)">
+    <link rel="icon" href="mypic.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div id="name">Isaac Ugochukwu</div>
+        <div id="menubar" onclick="shownav()">&#9776;</div>
+        <script>
+            function shownav() {
+                var nav = document.getElementById("nav");
+                nav.style.width = "50%";
+                nav.style.height = "100%";
+            }
+        </script>
+    </nav>
+    
+    <div id="nav">
+        <p id="back" onclick="hidenav()">&times;</p>
+        <script>
+            function hidenav() {
+                var nav = document.getElementById("nav");
+                nav.style.width = "0";
+                nav.style.height = "0";
+            }
+        </script>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <!--<li><a href="#download-cv-button">DOWNLOAD CV</a></li>-->
+        </ul>
+    </div>
+
+    <main>
+        <p id="imgcontainer"><img src="mypic.jpg" alt="my picture" id="aboutimg"></p>
+        <h1 id="heroheader">WHAT'S UP? I'M ISAAC UGOCHUKWU</h1>
+        <p class="writeups">A Professional Frontend Web Developer, Skilled In Designing & Crafting Responsive and Scalable Web Applications. <span class="emoji">&#9889;</span></p>
+        <div id="sociallinks">
+        <span><a href="https://www.facebook.com/IsaacUgochukwu"><img width="40px" src="facebookwhite.svg" alt="facebook"></a></span>
+        <span><a href="https://wa.me/+2349033116563"><img width="40px" src="whatsappwhite.svg" alt="whatsapp"></a></span>
+        <span><a href="https://www.instagram.com/zik_net"><img width="40px" src="instagramwhite.svg" alt="instagram"></a></span>
+        <span><a href="https://github.com/IsaacUgochukwu"><img id="ghubimg" src="https://github.githubassets.com/favicons/favicon.svg" alt="github"></a></span>
+        </div>
+
+        <div id="skills">
+            <h2 class="headers">SKILLS</h2>
+            <p class="writeups">Skills and technologies I'm good and at include...</p>
+            <div id="techcontainer">
+            <span><img id="techimg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="html5"></span>
+            <span><img id="techimg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="css3"></span>
+            <span><img id="techimg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript"></span>
+            <span><img id="techimg" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="reactjs"></span>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h2  class="headers">PROJECTS</h2>
+            <p class="writeups">Here, you'll see list of my projects (both client and personal)</p>
+            <p class="writeups">PROJECTS ARE ON PENDING SIR...</p>
+        </div>
+
+        <div id="contact">
+            <h2  class="headers">CONTACT</h2>
+            <p class="writeups">Get in touch with me to discuss your project needs or collaborate on a new idea!!.</p>
+            <span class="reach">Mail:  <a href="mailto:isaaczik9@gmail.com"><img width="9%" src="mail.svg" alt="mail"></a></span>
+            <span class="reach">Call:  <a href="tel:+2349033116563"><img width="9%" src="phonenew.svg" alt="call"></a></span>
+            <p class="writeups">Hit me at my social links</p>
+            <div id="sociallinks">
+            <span><a href="https://www.facebook.com/IsaacUgochukwu"><img width="40px" src="facebookwhite.svg" alt="facebook"></a></span>
+            <span><a href="https://wa.me/+2349033116563"><img width="40px" src="whatsappwhite.svg" alt="whatsapp"></a></span>
+            <span><a href="https://www.instagram.com/zik_net"><img width="40px" src="instagramwhite.svg" alt="instagram"></a></span>
+            <span><a href="https://github.com/IsaacUgochukwu"><img id="githubimg" src="https://github.githubassets.com/favicons/favicon.svg" alt="github"></a></span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
