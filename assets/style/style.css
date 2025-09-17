@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 0.95rem sans-serif;
+    background: black;
+    margin: 45% 0px 10px 0px;
+    color: white;
+    width: 100%;
+}
+
+nav {
+    background: darkblue;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.initials {
+    font: 1.5rem serif;
+}
+
+.menu-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero, .about-me {
+    margin: 50px;
+    text-align: center;
+}
+
+.about-me h2 {
+    margin: 10px;
+}
+
+.hero figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 40px auto;
+}
+
+.avatar {
+    width: 45%;
+    height: auto;
+    border: thin solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero-text-greeting {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hero-text {
+    margin: auto;
+    width: 85%;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.btns button {
+    width: 150px;
+    height: 40px;
+    font: inherit;
+    cursor: pointer;
+    /* border: 0; */
+    border-radius: 10px;
+    transition: all ease 1s;
+}
+
+.btns button:hover, button:focus, button:active {
+    animation: grow 1s ease;
+}
+
+.download-cv-btn {
+    background-color: blue;
+    color: white;
+    border: thin solid white;
+}
+
+.hire-me-btn {
+    background: black;
+    color: white;
+    border: thin solid white;
+}
+
+.download-cv-btn:hover, .download-cv-btn:focus, .download-cv-btn:active {
+    background-color: darkblue;
+}
+
+/* Animation */
+@keyframes grow {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(120%);
+    }
+}
