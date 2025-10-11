@@ -1,21 +1,455 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-top: 120px;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Gravitas One;
+  src: url(/assets/fonts/Gravitas_One/GravitasOne-Regular.ttf);
 }
 
 body {
-    font: 0.95rem sans-serif;
-    background: black;
-    margin: 45% 0px 10px 0px;
-    color: white;
-    width: 100%;
+  font: 1rem Poppins, sans-serif;
+  background: whitesmoke;
+  margin: 20% 0px 0 0px;
+  color: black;
+  width: 100%;
 }
 
-nav {
-    background: darkblue;
+.nav-sm {
+  background: black;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: white;
+}
+
+h2 {
+  font-family: Gravitas One, serif;
+}
+
+.initials {
+  font: 1.5rem Gravitas One, serif;
+}
+
+.menu-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-closer {
+  font-size: 2rem;
+  cursor: pointer;
+  background: black;
+  border: thin solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu-closer:hover,
+.menu-closer:active,
+.menu-closer:focus {
+  opacity: 80%;
+}
+
+.menu {
+  background: black;
+  border: thin solid white;
+  border-radius: 10px;
+  width: 70%;
+  height: 334px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  left: 15%;
+  margin: auto;
+  transition: all ease 1s;
+}
+
+.top-minus-334 {
+  top: -334px;
+}
+
+.top-normal {
+  top: 150px;
+}
+
+.menu ul li {
+  list-style-type: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all ease 1s;
+}
+
+.menu ul li a:hover,
+.menu ul li a:active,
+.menu ul li a:focus {
+  text-decoration: underline;
+}
+
+.hero,
+.about-me,
+.my-skills,
+.experience,
+.my-works,
+.contact {
+  margin: 50px;
+  text-align: center;
+}
+
+.about-me h2,
+.my-skills h2,
+.experience h2,
+.my-works h2,
+.contact h2 {
+  margin: 10px;
+}
+
+.write-up {
+  margin: 20px;
+}
+
+.hero figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto 40px auto;
+}
+
+.avatar {
+  width: 60%;
+  height: auto;
+  border: thin solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero-text-greeting {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-text {
+  margin: auto;
+  width: 85%;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.btns button {
+  width: 150px;
+  height: 40px;
+  font: inherit;
+  cursor: pointer;
+  /* border: 0; */
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+
+.btns button:hover,
+button:focus,
+button:active {
+  animation: anim 0.5s ease;
+}
+
+.download-cv-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  border: thin solid white;
+}
+
+.hire-me-btn {
+  background: black;
+  color: white;
+  border: thin solid white;
+}
+
+.download-cv-btn:hover,
+.download-cv-btn:focus,
+.download-cv-btn:active {
+  background-color: darkblue;
+}
+
+.my-skills .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  margin: 10px;
+}
+
+.the-experience {
+  border: thin solid #333;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+.the-experience:hover,
+.the-experience:active,
+.the-experience:focus {
+  animation: moveBox 1s ease;
+  border: thin solid blue;
+  border-radius: 10px;
+}
+
+.date {
+  font-family: monospace;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.company {
+  display: block;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+
+.company-head {
+  font-family: Gravitas One, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.duty {
+  text-align: left;
+}
+
+.work {
+  border: thin solid #333;
+  padding: 1.2rem;
+  margin: 20px 0 20px 0;
+}
+
+.work:hover,
+.work:active,
+.work:focus {
+  animation: moveBox 1s ease;
+  border: thin solid blue;
+  border-radius: 10px;
+}
+
+.work-image img {
+  width: 99%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.work-description {
+  margin: 20px;
+}
+
+.work-links {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stacks-head {
+  margin-right: 5px;
+}
+
+.stacks-used {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact {
+  background: black;
+  width: 100%;
+  margin: auto 0;
+  padding: 1rem;
+  color: white;
+}
+
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.contact form input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: thin solid black;
+  margin: 10px;
+  padding: 10px;
+  font: inherit;
+}
+
+.contact form textarea {
+  width: 80%;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.contact form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font: inherit;
+  margin: 20px;
+  background: black;
+  color: white;
+  border: thin solid white;
+  cursor: pointer;
+}
+
+.contact form button img {
+  margin-left: 10px;
+}
+
+.contact form label {
+  text-align: left;
+}
+
+.contact form button:hover,
+.contact form button:active,
+.contact form button:focus {
+  animation: anim 0.5s ease;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  cursor: pointer;
+}
+
+.github {
+  background: white;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 20px;
+}
+
+.nav-lg {
+  display: none;
+}
+
+/* Animations */
+@keyframes anim {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(12px);
+  }
+}
+
+/* Responsive design for desktop/larger screens */
+@media screen and (min-width: 824px) {
+  body {
+    margin: 30px auto 0 auto;
+    font-size: 1.1rem;
+  }
+
+  .hero .avatar {
+    width: 70%;
+    height: auto;
+    border: thin solid black;
+    margin-top: 20%;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text-greeting {
+    font-size: 1.8rem;
+    margin-top: 20%;
+  }
+
+  .btns button {
+    width: 180px;
+    height: 50px;
+  }
+
+  .nav-sm,
+  .menu {
+    display: none;
+  }
+
+  .nav-lg {
+    background: black;
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,95 +457,45 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-}
+    z-index: 100;
+    color: white;
+  }
 
-.initials {
-    font: 1.5rem serif;
-}
-
-.menu-btn {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.hero, .about-me {
-    margin: 50px;
-    text-align: center;
-}
-
-.about-me h2 {
-    margin: 10px;
-}
-
-.hero figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px auto 40px auto;
-}
-
-.avatar {
-    width: 45%;
-    height: auto;
-    border: thin solid white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.hero-text-greeting {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.hero-text {
-    margin: auto;
-    width: 85%;
-    text-align: center;
-}
-
-.btns {
+  .nav-lg ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
-}
+    gap: 30px;
+    list-style-type: none;
+  }
 
-.btns button {
-    width: 150px;
-    height: 40px;
-    font: inherit;
-    cursor: pointer;
-    /* border: 0; */
-    border-radius: 10px;
+  .nav-lg ul:last-child {
+    margin-right: 30px;
+  }
+
+  .nav-lg ul a {
+    text-decoration: none;
+    color: white;
     transition: all ease 1s;
-}
+  }
 
-.btns button:hover, button:focus, button:active {
-    animation: grow 1s ease;
-}
+  .nav-lg ul a:hover,
+  .nav-lg ul a:focus,
+  .nav-lg ul a:active {
+    text-decoration: underline;
+  }
 
-.download-cv-btn {
-    background-color: blue;
-    color: white;
-    border: thin solid white;
-}
+  .work {
+    border: thin solid #333;
+    padding: 1.2rem;
+    margin: 20px 0 20px 0;
+    width: 40%;
+  }
 
-.hire-me-btn {
-    background: black;
-    color: white;
-    border: thin solid white;
-}
-
-.download-cv-btn:hover, .download-cv-btn:focus, .download-cv-btn:active {
-    background-color: darkblue;
-}
-
-/* Animation */
-@keyframes grow {
-    0% {
-        transform: scale(100%);
-    }
-    100% {
-        transform: scale(120%);
-    }
+  .work-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
 }

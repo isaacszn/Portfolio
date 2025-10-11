@@ -1,34 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isaac Ugochukwu's Portfolio - Frontend Web Developer</title>
-    <link rel="stylesheet" href="/assets/style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/avatar.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- Navigation section -->
-    <nav>
-        <span class="initials">IU</span> <span class="menu-btn">&#9776;</span>
+    <!-- Navbar for small screens -->
+    <nav class="nav-sm">
+      <span class="initials">IU</span> <span class="menu-btn">&#9776;</span>
     </nav>
 
+    <!-- Navbar for lg screens/desktop -->
+    <nav class="nav-lg">
+      <span class="initials">IU</span>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#works">My works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu for mobile -->
+    <section class="menu top-minus-334">
+      <span class="menu-closer">&times;</span>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#works">My works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
+
     <!-- Hero section -->
-    <section class="hero">
+    <section class="hero" id="home">
+      <div>
         <figure>
-            <figcaption><img class="avatar" src="/assets/img/avatar.png" alt="My Avatar" width="1024" height="1024"></figcaption>
+          <figcaption>
+            <img
+              class="avatar"
+              src="/assets/img/avatar.png"
+              alt="My Avatar"
+              width="1024"
+              height="1024"
+            />
+          </figcaption>
         </figure>
-        <p class="hero-text-greeting">Hi there 👋, I'm Isaac Ugochukwu</p><br>
-        <p class="hero-text">A passionate Frontend Web Developer, that utilizes tech stacks like HTML, CSS (Bootstrap), JavaScript & ReactJS to craft intuitive and professional websites and web applications for clients and organisations.</p>
+      </div>
+      <div>
+        <p class="hero-text-greeting">Hi there 👋, I'm Isaac Ugochukwu</p>
+        <br />
+        <p class="hero-text">
+          A passionate Frontend Web Developer, that utilizes tech stacks like
+          HTML, CSS (Bootstrap), JavaScript & ReactJS to craft intuitive and
+          professional websites and web applications for clients and
+          organisations.
+        </p>
         <div class="btns">
-            <button class="hire-me-btn">Hire me!</button>
-            <button class="download-cv-btn">Download CV</button>
+          <button class="hire-me-btn">Hire me!</button>
+          <button class="download-cv-btn">
+            Download CV <img src="/assets/icons/download.svg" alt="" />
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- About me section -->
-     <section class="about-me">
-        <h2>About Me</h2>
-        <p>My name is Isaac Ugochukwu, I live in Abia State, I have about 2+ years of experience in web development. I've worked and built several projects, both personal and for clients. <br>My hobbies include reading tech related articles and having conversations aside coding.</p>
-     </section>
-</body>
+    <section class="about-me" id="about">
+      <h2>About Me</h2>
+      <p>
+        My name is Isaac Ugochukwu, I live in Abia State, I have about 2+ years
+        of experience in web development. I've worked and built several websites
+        and web applications, both personal and for clients. I also enjoy
+        reading, drawing, watching movies, listening to music, playing soccer
+        and solving problems.
+      </p>
+    </section>
+
+    <!-- My skills section -->
+    <section class="my-skills" id="skills">
+      <h2>My Skills</h2>
+      <p class="write-up">
+        These are the list of the technologies I utilise to craft intuitive
+        websites and web applications
+      </p>
+      <div class="skills">
+        <span><img src="/assets/img/stack-imgs/html.png" alt="HTML" /></span>
+        <span><img src="/assets/img/stack-imgs/css.png" alt="CSS" /></span>
+        <span
+          ><img src="/assets/img/stack-imgs/javascript.png" alt="JavaScript"
+        /></span>
+        <span
+          ><img src="/assets/img/stack-imgs/bootstrap.png" alt="Bootstrap"
+        /></span>
+        <span
+          ><img src="/assets/img/stack-imgs/reactjs.png" alt="ReactJS"
+        /></span>
+        <span><img src="/assets/img/stack-imgs/git.png" alt="Git" /></span>
+        <span
+          ><img
+            src="/assets/img/stack-imgs/github.png"
+            alt="GitHub"
+            width="40"
+            height="40"
+        /></span>
+        <span><img src="/assets/img/stack-imgs/figma.png" alt="Figma" /></span>
+        <span
+          ><img src="/assets/img/stack-imgs/vscode.png" alt="VSCode"
+        /></span>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="experience" id="experience">
+      <h2>Experience</h2>
+      <br />
+      <div class="the-experience">
+        <span class="company"
+          ><span class="company-head">Bluqq Inc.</span> ---
+          <span class="role">Frontend Developer</span></span
+        >
+        <span class="date">April 2025 - till date</span>
+        <span class="duty"
+          >Working remotely as a frontend web developer for a fintech (Financial
+          Technology) startup.</span
+        >
+      </div>
+    </section>
+
+    <!-- My works section -->
+    <section class="my-works" id="works">
+      <h2>My works</h2>
+      <p>
+        These are the lists of both personal and client projects I've built...
+      </p>
+      <div class="work-flex">
+        <div class="work">
+          <figure class="work-image">
+            <img
+              src="/assets/img/project-imgs/regexjs.png"
+              alt="Work"
+              width="1280"
+              height="760"
+            />
+          </figure>
+          <p class="work-description">
+            RegexJS - A JavaScript library I built to clear the worries of devs
+            having to write regexp for validation in their...
+          </p>
+          <p class="stacks-used">
+            <span class="stacks-head">Stacks used:</span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/javascript.png"
+                alt="JavaScript"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/reactjs.png"
+                alt="ReactJS"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/css.png"
+                alt="CSS"
+                width="39"
+                height="39"
+            /></span>
+          </p>
+          <div class="work-links">
+            <span
+              ><a href="https://github.com/isaacszn/RegexJS"
+                ><img
+                  src="/assets/icons/github.png"
+                  alt="GitHub link"
+                  width="25"
+                  height="25" /></a
+            ></span>
+            <span
+              ><a href="https://regexjs-doc.vercel.app"
+                ><img src="/assets/icons/link.svg" alt="Live site" /></a
+            ></span>
+          </div>
+        </div>
+        <div class="work">
+          <figure class="work-image">
+            <img
+              src="/assets/img/project-imgs/bluqq.png"
+              alt="Work"
+              width="1280"
+              height="760"
+            />
+          </figure>
+          <p class="work-description">
+            Bluqq - A FinTech platform that offers escrow, crypto/fiat payment,
+            currency conversion...
+          </p>
+          <p class="stacks-used">
+            <span class="stacks-head">Stacks used:</span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/javascript.png"
+                alt="JavaScript"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/reactjs.png"
+                alt="ReactJS"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/css.png"
+                alt="CSS"
+                width="39"
+                height="39"
+            /></span>
+          </p>
+          <div class="work-links">
+            <span
+              ><a href="https://github.com/isaacszn/RegexJS"
+                ><img
+                  src="/assets/icons/github.png"
+                  alt="GitHub link"
+                  width="25"
+                  height="25" /></a
+            ></span>
+            <span
+              ><a href="https://regexjs-doc.vercel.app"
+                ><img src="/assets/icons/link.svg" alt="Live site" /></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Wanna reach out to me? Contact me...</p>
+      <form action="">
+        <label for="fullname">Your fullname:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="John Doe"
+          required
+        />
+        <label for="message">Send me a message:</label>
+        <textarea name="message" id="message" required>
+Hello! I want you to work on a project I have in mind. What are your thoughts?</textarea
+        >
+        <button type="submit">
+          Send <img src="/assets/icons/send.svg" alt="Send" />
+        </button>
+      </form>
+      <h3>You can also reach me out via these platforms:</h3>
+      <div class="socials">
+        <span
+          ><a href="https://x.com/zikk_szn" target="_blank"
+            ><img src="/assets/icons/x.png" alt="X" /></a
+        ></span>
+        <span
+          ><a href="https://wa.me/+2349166608124" target="_blank"
+            ><img src="/assets/icons/whatsapp.png" alt="WhatsApp" /></a
+        ></span>
+        <span class="github"
+          ><a href="https://github.com/isaacszn" target="_blank"
+            ><img src="/assets/icons/github.png" alt="GitHub" /></a
+        ></span>
+        <span
+          ><a href="tel:+2349166608124"
+            ><img src="/assets/icons/call.svg" alt="Call" /></a
+        ></span>
+        <span
+          ><a href="mailto:isaaczik9@gmail.com"
+            ><img src="/assets/icons/mail.svg" alt="Mail" /></a
+        ></span>
+      </div>
+
+      <!-- Footer section -->
+      <br /><br />
+      <p style="font-family: monospace">
+        Crafted by Isaac Ugochukwu with
+        <span style="color: red">&hearts;</span> <br />&copy; 2025
+      </p>
+    </section>
+
+    <!-- The CV/Resume to be downloaded -->
+    <div style="display: none">
+      <a href="/assets/zik_cv.pdf" download="" id="anker"></a>
+    </div>
+
+    <script src="/assets/scripts/main.js"></script>
+  </body>
 </html>
