@@ -21,7 +21,7 @@
 body {
   font: 1rem Poppins, sans-serif;
   background: whitesmoke;
-  margin: 20% 0px 0 0px;
+  margin: 0;
   color: black;
   width: 100%;
 }
@@ -33,7 +33,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 300px;
+  gap: 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -124,7 +124,7 @@ h2 {
 .experience,
 .my-works,
 .contact {
-  margin: 50px;
+  margin: 50px 20px;
   text-align: center;
 }
 
@@ -148,9 +148,9 @@ h2 {
 }
 
 .avatar {
-  width: 60%;
+  width: 70%;
   height: auto;
-  border: thin solid white;
+  border: thin solid black;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ h2 {
 
 .hero-text {
   margin: auto;
-  width: 85%;
+  width: 95%;
   text-align: center;
 }
 
@@ -176,7 +176,7 @@ h2 {
 
 .btns button {
   width: 150px;
-  height: 40px;
+  height: 45px;
   font: inherit;
   cursor: pointer;
   /* border: 0; */
@@ -191,6 +191,7 @@ button:active {
 }
 
 .download-cv-btn {
+  font-size: 0.75rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,5 +498,10 @@ button:active {
     justify-content: center;
     align-items: center;
     gap: 10%;
+    flex-wrap: wrap;
+  }
+
+  .download-cv-btn {
+    font: inherit !important;
   }
 }
