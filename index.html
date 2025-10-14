@@ -61,7 +61,7 @@
         </figure>
       </div>
       <div>
-        <p class="hero-text-greeting">Hi there 👋, I'm Isaac Ugochukwu</p>
+        <p class="hero-text-greeting">Hi there 👋, I'm <span style="color: blue; font-size: 1.4rem;">Isaac Ugochukwu</span></p>
         <br />
         <p class="hero-text">
           A passionate Frontend Web Developer, that utilizes tech stacks like
@@ -151,6 +151,53 @@
         <div class="work">
           <figure class="work-image">
             <img
+              src="/assets/img/project-imgs/portfolio.jpg"
+              alt="Work"
+              width="1280"
+              height="760"
+            />
+          </figure>
+          <p class="work-description">
+            <b>My portfolio website</b> - My personal portfolio website, I built to showcase my skills and works...
+          </p>
+          <p class="stacks-used">
+            <span class="stacks-head">Stacks used:</span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/html.png"
+                alt="JavaScript"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/css.png"
+                alt="ReactJS"
+                width="39"
+                height="39"
+            /></span>
+            <span
+              ><img
+                src="/assets/img/stack-imgs/javascript.png"
+                alt="CSS"
+                width="39"
+                height="39"
+            /></span>
+          </p>
+          <div class="work-links">
+            <span><a href="https://github.com/isaacszn/Portfolio" target="_blank"><img
+                  src="/assets/icons/github.png"
+                  alt="GitHub link"
+                  width="25"
+                  height="25" /></a
+            ></span>
+            <span><a href="zik-site.vercel.app" target="_blank"><img src="/assets/icons/link.svg" alt="Live site" /></a
+            ></span>
+          </div>
+      </div>
+        <div class="work">
+          <figure class="work-image">
+            <img
               src="/assets/img/project-imgs/regexjs.png"
               alt="Work"
               width="1280"
@@ -187,7 +234,7 @@
           </p>
           <div class="work-links">
             <span
-              ><a href="https://github.com/isaacszn/RegexJS"
+              ><a href="https://github.com/isaacszn/RegexJS" target="_blank"
                 ><img
                   src="/assets/icons/github.png"
                   alt="GitHub link"
@@ -195,7 +242,7 @@
                   height="25" /></a
             ></span>
             <span
-              ><a href="https://regexjs-doc.vercel.app"
+              ><a href="https://regexjs-doc.vercel.app" target="_blank"
                 ><img src="/assets/icons/link.svg" alt="Live site" /></a
             ></span>
           </div>
@@ -412,7 +459,9 @@
           placeholder="John Doe"
           required
         />
-        <label for="message">Send me a message:</label>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+        <label for="message">Write a message:</label>
         <textarea name="message" id="message" required>
 Hello! I want you to work on a project I have in mind. What are your thoughts?</textarea
         >
