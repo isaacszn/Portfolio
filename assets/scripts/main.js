@@ -20,3 +20,7 @@ document.querySelector(".menu-closer").addEventListener('click', () => {
     document.querySelector('.menu').classList.remove('top-normal');
     document.querySelector('.menu').classList.add('top-minus-334');
 });
+
+const informUser = () => {
+    alert("So sorry, the live links aren't available!")
+}
