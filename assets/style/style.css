@@ -182,8 +182,6 @@ h2 {
   height: 45px;
   font: inherit;
   cursor: pointer;
-  /* border: 0; */
-  border-radius: 10px;
   transition: all ease 1s;
 }
 
@@ -198,21 +196,22 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: black;
   color: white;
   border: thin solid white;
 }
 
 .hire-me-btn {
-  background: black;
-  color: white;
-  border: thin solid white;
+  background-color: whitesmoke;
+  color: black;
+  border: thin solid black;
+  transition: all ease 1s;
 }
 
-.download-cv-btn:hover,
-.download-cv-btn:focus,
-.download-cv-btn:active {
-  background-color: darkblue;
+.hire-me-btn:hover,
+.hire-me-btn:focus,
+.hire-me-btn:active {
+  border: 3px solid black;
 }
 
 .my-skills .skills {
