@@ -261,6 +261,8 @@ button:active {
 }
 
 .duty {
+  display: block;
+  margin: 10px 0 10px 0;
   text-align: left;
 }
 
@@ -330,7 +332,7 @@ button:active {
   margin: 10px;
   padding: 10px;
   font: inherit;
-  transition: all ease 1s;
+  transition: all ease 0.5s;
 }
 
 .contact form textarea {
@@ -340,7 +342,7 @@ button:active {
   padding: 10px;
   border-radius: 10px;
   font: inherit;
-  transition: all ease 1s;
+  transition: all ease 0.5s;
 }
 
 .contact form button {
@@ -399,6 +401,27 @@ button:active {
 
 input:focus, textarea:focus {
   outline: 3px solid blue;
+}
+
+.see-more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15%;
+  padding: 10px;
+  background: whitesmoke;
+  border: thin solid black;
+  cursor: pointer;
+}
+
+.see-more img {
+  background: whitesmoke;
+  border-radius: 50%;
+}
+
+.see-more:hover, .see-more:focus, .see-more:active {
+  background-color: black;
+  color: white;
 }
 
 /* Animations */
