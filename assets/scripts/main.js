@@ -23,4 +23,8 @@ document.querySelector(".menu-closer").addEventListener('click', () => {
 
 const informUser = () => {
     alert("So sorry, the live links aren't available!")
-}
+};
+
+const goToMyRepos = () => {
+    window.location.href = 'https://github.com/isaacszn?tab=repositories';
+};
