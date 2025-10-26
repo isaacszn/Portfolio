@@ -157,12 +157,13 @@ h2 {
 }
 
 .hero-text-greeting {
-  font: 1.3rem Gravitas One, sans-serif;
+  font: 1.5rem Gravitas One, sans-serif;
   text-align: center;
   font-weight: bold;
 }
 
 .hero-text {
+  font-size: 1.1rem;
   margin: auto;
   width: 95%;
   text-align: center;
@@ -175,6 +176,7 @@ h2 {
   align-items: center;
   margin: 20px;
   gap: 15%;
+  font-weight: bold;
 }
 
 .btns button {
@@ -461,6 +463,10 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .hero-text {
+    margin: 5% auto 9% auto;
   }
 
   .hero-text-greeting {
